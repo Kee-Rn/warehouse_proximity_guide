@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A5 IT - Warehouse Proximity Guide</title>
+<title>A5 IT — Warehouse Proximity Guide</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -95,7 +95,7 @@
 </head>
 <body>
 <div class="container">
-  <h1>A5 IT - Warehouse Proximity Guide</h1>
+  <h1>A5 IT — Warehouse Proximity Guide</h1>
   <p class="subtitle">Click any state to see all warehouses ranked by distance for both D&H and TD SYNNEX</p>
 
   <div class="controls">
@@ -117,6 +117,7 @@
   <div class="footer">
     <strong>Notes:</strong> Distances are straight-line approximations from each state's geographic center. Actual shipping distances are typically 20–40% longer.
     When the nearest warehouse is out of stock, use the next closest option from the expanded view.
+    Remember: SYNNEX displayed transit times can be unreliable — trust geographic proximity over their portal ETAs.
   </div>
 </div>
 
@@ -124,7 +125,7 @@
 const DH = [
   { name: "Harrisburg, PA", lat: 40.27, lng: -76.88 },
   { name: "Atlanta, GA", lat: 33.75, lng: -84.39 },
-  { name: "Chicago, IL", lat: 41.88, lng: -87.63 },
+  { name: "Indianapolis, IN", lat: 39.77, lng: -86.16 },
   { name: "Fresno, CA", lat: 36.75, lng: -119.77 },
 ];
 const SYN = [
@@ -224,11 +225,11 @@ function render() {
       </div>
       <div class="detail-panel">
         <div class="wh-column">
-          <div class="wh-column-title dh">D&H - All Warehouses</div>
+          <div class="wh-column-title dh">D&H — All Warehouses</div>
           ${whRows(s.dhR, 'dh')}
         </div>
         <div class="wh-column">
-          <div class="wh-column-title syn">TD SYNNEX - All Warehouses</div>
+          <div class="wh-column-title syn">TD SYNNEX — All Warehouses</div>
           ${whRows(s.synR, 'syn')}
         </div>
       </div>
